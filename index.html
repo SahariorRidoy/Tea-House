@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Manrope Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,9 +31,10 @@
 </head>
 
 <body>
+    <!-- Banner Section Start-->
     <header>
         <!-- Banner Section -->
-        <div class="md:flex md:justify-between md:items-center md:pl-[230px] md:pr-[73px] pt-[68px]">
+        <div class="md:flex md:justify-between md:items-center md:pl-[230px] md:pr-[73px] pt-[68px] px-3 mb-[130px]">
             <div>
                 <h1 class=" font-extrabold text-[80px] max-w-[628px] text-[#1C1C1C] leading-[100px] mb-7">It's good tea
                     time at The Tea House</h1>
@@ -63,8 +63,60 @@
                 </div>
             </div>
     </header>
-    <main></main>
+
+    <!-- Main Section Start -->
+    <main class="mx-auto md:px-[230px] mb-[160px]">
+    <!-- Featured Product Section Start-->
+     <section>
+        <div class="mb-12">
+            <h2 class="font-extrabold text-5xl text-[#1C1C1C] text-center mb-5">Our Featured Products</h2>
+            <p class="font-medium text-[#777] text-center max-w-[900px] mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+        </div>
+    <!-- Cards-->
+    <div class="flex flex-wrap justify-center md:grid sm:gap-8 md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-12 md:mx-auto">
+            <!-- Card-1 -->
+            <div class="p-[30px] bg-gradient-to-t from-[#f4f4f404] to-[#F4F4F4] max-w-[267px] rounded-xl">
+                <img class="mx-auto mb-7" src="images/tea-1.png" alt="">
+                <h3 class="font-extrabold text-2xl text-center mb-3">Milk Tea</h3>
+                <p class="text-center">Creamer could be replaced by fresh milk</p>
+            </div>
+            <!-- Card-2 -->
+            <div class="p-[30px] bg-gradient-to-t from-[#f4f4f404] to-[#F4F4F4] max-w-[267px] rounded-lg">
+                <img class="mx-auto mb-7" src="images/tea-2.png" alt="">
+                <h3 class="font-extrabold text-2xl text-center mb-3">Milk Tea</h3>
+                <p class="text-center">Creamer could be replaced by fresh milk</p>
+            </div>
+            <!-- Card-3 -->
+            <div class="p-[30px] bg-gradient-to-t from-[#f4f4f404] to-[#F4F4F4] max-w-[267px] rounded-lg">
+                <img class="mx-auto mb-7" src="images/tea-3.png" alt="">
+                <h3 class="font-extrabold text-2xl text-center mb-3">Milk Tea</h3>
+                <p class="text-center">Creamer could be replaced by fresh milk</p>
+            </div>
+            <!-- Card-4 -->
+            <div class="p-[30px] bg-gradient-to-t from-[#f4f4f404] to-[#F4F4F4] max-w-[267px] rounded-lg">
+                <img class="mx-auto mb-7" src="images/tea-4.png" alt="">
+                <h3 class="font-extrabold text-2xl text-center mb-3">Milk Tea</h3>
+                <p class="text-center">Creamer could be replaced by fresh milk</p>
+            </div>
+        </div>
+     </section>
+
+    </main>
     <footer></footer>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </body>
 
 </html>
